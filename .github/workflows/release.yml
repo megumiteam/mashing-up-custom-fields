@@ -57,7 +57,7 @@ jobs:
     # ghr - Easily ship your project to your user using Github Releases : https://deeeet.com/ghr/
     - name: upload to github release
       env:
-        PACKAGE_NAME: "shifter-github-hosting-plugin-sample"
+        PACKAGE_NAME: "mashing-up-custom-fields"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOPATH: /home/runner/go
       run: |
