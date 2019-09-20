@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: MASHING UP Custom Fields
- * Version: {TAGNAME}
+ * Version: {release version}
  * Author: Digitalcube
  * Author URI: https://en.digitalcube.jp
  * Text Domain: mashing_up_custom_fields
