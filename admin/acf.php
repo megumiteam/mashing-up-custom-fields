@@ -1,5 +1,5 @@
 <?php
-
+// スピーカーフィールド post_type speaker
 acf_add_local_field_group(array(
 	'key' => 'group_5d19715432993',
 	'title' => 'スピーカーフィールド',
@@ -185,6 +185,7 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// スポンサーフィールド post_type sponsor
 acf_add_local_field_group(array(
 	'key' => 'group_5d19731f12656',
 	'title' => 'スポンサーフィールド',
@@ -263,6 +264,7 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// セッションフィールド  post_type session
 acf_add_local_field_group(array(
 	'key' => 'group_5d19752fb08f6',
 	'title' => 'セッションフィールド',
@@ -521,6 +523,13 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ スピーカー speakers
+$pagecheck = get_page_by_path('speakers');
+if ( ! empty( $pagecheck ) ) {
+	$speakers_pageid = $pagecheck->ID;
+} else {
+	$speakers_pageid = 1;
+}
 acf_add_local_field_group(array(
 	'key' => 'group_5d2294e1433be',
 	'title' => 'Speakers',
@@ -569,7 +578,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '11',
+				'value' => $speakers_pageid,
 			),
 		),
 	),
