@@ -543,7 +543,7 @@ acf_add_local_field_group(array(
 ));
 
 // 固定ページ スピーカー speakers
-$pagecheck = get_page_by_path('speakers');
+$pagecheck = get_page_by_path( 'speakers' );
 if ( ! empty( $pagecheck ) ) {
 	$speakers_pageid = $pagecheck->ID;
 } else {
@@ -612,6 +612,14 @@ acf_add_local_field_group(array(
 	'active' => true,
 	'description' => '',
 ));
+
+// 固定ページ スピーカー supporters
+$pagecheck = get_page_by_path( 'supporters' );
+if ( ! empty( $pagecheck ) ) {
+	$supporters_pageid = $pagecheck->ID;
+} else {
+	$supporters_pageid = 1;
+}
 
 acf_add_local_field_group(array(
 	'key' => 'group_5d21f4bb89d83',
@@ -754,7 +762,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '17',
+				'value' => $supporters_pageid,
 			),
 		),
 	),
