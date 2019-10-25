@@ -620,7 +620,6 @@ if ( ! empty( $pagecheck ) ) {
 } else {
 	$supporters_pageid = 1;
 }
-
 acf_add_local_field_group(array(
 	'key' => 'group_5d21f4bb89d83',
 	'title' => 'スポンサー募集情報',
@@ -1154,6 +1153,13 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ チケット tickets
+$pagecheck = get_page_by_path( 'tickets' );
+if ( ! empty( $pagecheck ) ) {
+	$tickets_pageid = $pagecheck->ID;
+} else {
+	$tickets_pageid = 1;
+}
 acf_add_local_field_group(array(
 	'key' => 'group_5d26fe802366d',
 	'title' => 'ticket',
@@ -1278,7 +1284,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '19',
+				'value' => $tickets_pageid,
 			),
 		),
 	),
