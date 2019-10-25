@@ -613,6 +613,139 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ アワード award
+$pagecheck = get_page_by_path( 'award' );
+if ( ! empty( $pagecheck ) ) {
+	$award_pageid = $pagecheck->ID;
+} else {
+	$award_pageid = 1;
+}
+acf_add_local_field_group(array(
+	'key' => 'group_5db2d765046df',
+	'title' => 'AWARD',
+	'fields' => array(
+		array(
+			'key' => 'field_5db2d7ac95f89',
+			'label' => 'スポンサーロゴ',
+			'name' => 'mu_award_logo',
+			'type' => 'image',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'id',
+			'preview_size' => 'medium',
+			'library' => 'all',
+			'min_width' => '',
+			'min_height' => '',
+			'min_size' => '',
+			'max_width' => '',
+			'max_height' => '',
+			'max_size' => '',
+			'mime_types' => '',
+		),
+		array(
+			'key' => 'field_5db2d7ea95f8a',
+			'label' => '自由入力欄（日本語）',
+			'name' => 'mu_award_text_ja',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
+		),
+		array(
+			'key' => 'field_5db2d82d95f8b',
+			'label' => '自由入力欄（英語）',
+			'name' => 'mu_award_text_en',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
+		),
+		array(
+			'key' => 'field_5db2da9bf6e9b',
+			'label' => 'READERS自由入力欄（日本語）',
+			'name' => 'mu_readers_text_ja',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
+		),
+		array(
+			'key' => 'field_5db2dab7f6e9c',
+			'label' => 'READERS自由入力欄（英語）',
+			'name' => 'mu_readers_text_en',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'page',
+				'operator' => '==',
+				'value' => $award_pageid,
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'seamless',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => array(
+		0 => 'the_content',
+	),
+	'active' => true,
+	'description' => '',
+));
+
 // 固定ページ スピーカー supporters
 $pagecheck = get_page_by_path( 'supporters' );
 if ( ! empty( $pagecheck ) ) {
