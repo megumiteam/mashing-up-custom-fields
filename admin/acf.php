@@ -969,6 +969,13 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ タイムテーブル timetable
+$pagecheck = get_page_by_path( 'timetable' );
+if ( ! empty( $pagecheck ) ) {
+	$timetable_pageid = $pagecheck->ID;
+} else {
+	$timetable_pageid = 1;
+}
 acf_add_local_field_group(array(
 	'key' => 'group_5d25e4babc0fa',
 	'title' => 'timetable',
@@ -1160,7 +1167,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '13',
+				'value' => $timetable_pageid,
 			),
 		),
 	),
