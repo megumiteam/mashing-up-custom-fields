@@ -756,8 +756,8 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
-// 固定ページ スピーカー supporters
-$pagecheck = get_page_by_path( 'supporters' );
+// 固定ページ スピーカー sponsores
+$pagecheck = get_page_by_path( 'sponsores' );
 if ( ! empty( $pagecheck ) ) {
 	$supporters_pageid = $pagecheck->ID;
 } else {
