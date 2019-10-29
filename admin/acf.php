@@ -513,9 +513,9 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d1975ca3b9ec',
-			'label' => '関連セッション',
+			'label' => 'Related Talks',
 			'name' => 'mu_session_relation',
-			'type' => 'relationship',
+			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
@@ -524,20 +524,11 @@ acf_add_local_field_group(array(
 				'class' => '',
 				'id' => '',
 			),
-			'post_type' => array(
-				0 => 'session',
-			),
-			'taxonomy' => '',
-			'filters' => array(
-				0 => 'search',
-				1 => 'taxonomy',
-			),
-			'elements' => array(
-				0 => 'featured_image',
-			),
-			'min' => 0,
-			'max' => '',
-			'return_format' => 'object',
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
 		),
 	),
 	'location' => array(
