@@ -1315,25 +1315,6 @@ acf_add_local_field_group(array(
 	'title' => 'ticket',
 	'fields' => array(
 		array(
-			'key' => 'field_5d26fe8db4685',
-			'label' => 'サブタイトル',
-			'name' => 'mu_tickets_subtitle',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
 			'key' => 'field_5d26feacb4686',
 			'label' => '自由入力欄（日本語）',
 			'name' => 'mu_tickets_text_ja',
