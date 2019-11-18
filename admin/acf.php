@@ -1268,7 +1268,7 @@ acf_add_local_field_group(array(
 		array(
 			'key' => 'field_5dd249006c930',
 			'label' => '画像',
-			'name' => 'award_ image',
+			'name' => 'award_image',
 			'type' => 'image',
 			'instructions' => 'スピーカーがゲームチェンジャーの子カテゴリーに属する場合のみ出力されます',
 			'required' => 0,
