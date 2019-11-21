@@ -550,6 +550,22 @@ acf_add_local_field_group(array(
 			'mime_types' => '',
 		),
 		array(
+			'key' => 'field_5db2d7ac95f90',
+			'label' => 'スポンサーリンク先',
+			'name' => 'mu_award_logo_link',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
 			'key' => 'field_5db2d7ea95f8a',
 			'label' => '自由入力欄',
 			'name' => 'mu_award_text_ja',
