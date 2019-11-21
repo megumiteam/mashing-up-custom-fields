@@ -679,9 +679,9 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d21f53a353a6',
-			'label' => '送信先メールアドレス',
-			'name' => 'mashing-up_sponsored--email',
-			'type' => 'email',
+			'label' => 'リンク先URL',
+			'name' => 'mashing-up_sponsored--anchor',
+			'type' => 'url',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
@@ -692,8 +692,7 @@ acf_add_local_field_group(array(
 			),
 			'default_value' => '',
 			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',		),
+		),
 	),
 	'location' => array(
 		array(
