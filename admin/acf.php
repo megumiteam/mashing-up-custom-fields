@@ -1,5 +1,5 @@
 <?php
-
+// スピーカーフィールド post_type speaker
 acf_add_local_field_group(array(
 	'key' => 'group_5d19715432993',
 	'title' => 'スピーカーフィールド',
@@ -24,47 +24,9 @@ acf_add_local_field_group(array(
 			'ui_off_text' => '',
 		),
 		array(
-			'key' => 'field_5d1971959df58',
-			'label' => '名前（英語）',
-			'name' => 'mu_en_name',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
 			'key' => 'field_5d1971fa53ebe',
-			'label' => '肩書き（日本語）',
+			'label' => '肩書き',
 			'name' => 'mu_ja_title',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
-			'key' => 'field_5d19723853ebf',
-			'label' => '肩書き（英語)',
-			'name' => 'mu_en_title',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
@@ -101,7 +63,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d19729353ec1',
-			'label' => 'プロフィール文（日本語）',
+			'label' => 'プロフィール文',
 			'name' => 'mu_ja_profile',
 			'type' => 'wysiwyg',
 			'instructions' => '',
@@ -119,9 +81,9 @@ acf_add_local_field_group(array(
 			'delay' => 0,
 		),
 		array(
-			'key' => 'field_5d1972b253ec2',
-			'label' => 'プロフィール文（英語)',
-			'name' => 'mu_en_profile',
+			'key' => 'field_5d1972b253ec4',
+			'label' => 'BI編集部からの推薦コメント',
+			'name' => 'mu_ja_editor_comment',
 			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
@@ -137,6 +99,40 @@ acf_add_local_field_group(array(
 			'media_upload' => 1,
 			'delay' => 0,
 		),
+		array(
+			'key' => 'field_5d1972b253ec9',
+			'label' => '編集記事リンク',
+			'name' => 'mu_ja_editor_link',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_5d1972b253ec8',
+			'label' => '編集記事タイトル',
+			'name' => 'mu_ja_editor_link_text',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',		),
 		array(
 			'key' => 'field_5d1972c853ec3',
 			'label' => '登壇セッション',
@@ -185,29 +181,11 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// スポンサーフィールド post_type sponsor
 acf_add_local_field_group(array(
 	'key' => 'group_5d19731f12656',
 	'title' => 'スポンサーフィールド',
 	'fields' => array(
-		array(
-			'key' => 'field_5d19735ea9482',
-			'label' => '文章（英語）',
-			'name' => 'mu_en_sponsor_content',
-			'type' => 'wysiwyg',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'tabs' => 'all',
-			'toolbar' => 'full',
-			'media_upload' => 1,
-			'delay' => 0,
-		),
 		array(
 			'key' => 'field_5d197381a9483',
 			'label' => 'リンクボタンの文字',
@@ -263,52 +241,15 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// セッションフィールド  post_type session
 acf_add_local_field_group(array(
 	'key' => 'group_5d19752fb08f6',
 	'title' => 'セッションフィールド',
 	'fields' => array(
 		array(
-			'key' => 'field_5d19753d3b9e4',
-			'label' => 'タイトル（英語）',
-			'name' => 'mu_session_title_en',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
 			'key' => 'field_5d19753d3b9e5',
-			'label' => 'セッション概要（日本語）',
+			'label' => 'セッション概要',
 			'name' => 'mu_session_summary_ja',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 8,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d19753d3b9e6',
-			'label' => 'セッション概要（英語）',
-			'name' => 'mu_session_summary_en',
 			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
@@ -473,7 +414,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d1975ca3b9ec',
-			'label' => '関連セッション',
+			'label' => 'Related Talks',
 			'name' => 'mu_session_relation',
 			'type' => 'relationship',
 			'instructions' => '',
@@ -496,7 +437,7 @@ acf_add_local_field_group(array(
 				0 => 'featured_image',
 			),
 			'min' => 0,
-			'max' => '',
+			'max' => 2,
 			'return_format' => 'object',
 		),
 	),
@@ -521,33 +462,21 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ スピーカー speakers
+$pagecheck = get_page_by_path( 'speakers' );
+if ( ! empty( $pagecheck ) ) {
+	$speakers_pageid = $pagecheck->ID;
+} else {
+	$speakers_pageid = 1;
+}
 acf_add_local_field_group(array(
 	'key' => 'group_5d2294e1433be',
 	'title' => 'Speakers',
 	'fields' => array(
 		array(
 			'key' => 'field_5d2294f008484',
-			'label' => 'スピーカー自由入力欄（日本語）',
+			'label' => 'スピーカー自由入力欄',
 			'name' => 'mu_speakers_lead_ja',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 8,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d22951108485',
-			'label' => 'スピーカー自由入力欄（英語）',
-			'name' => 'mu_speakers_lead_en',
 			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
@@ -569,7 +498,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '11',
+				'value' => $speakers_pageid,
 			),
 		),
 	),
@@ -585,6 +514,105 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ アワード award
+$pagecheck = get_page_by_path( 'award' );
+if ( ! empty( $pagecheck ) ) {
+	$award_pageid = $pagecheck->ID;
+} else {
+	$award_pageid = 1;
+}
+acf_add_local_field_group(array(
+	'key' => 'group_5db2d765046df',
+	'title' => 'AWARD',
+	'fields' => array(
+		array(
+			'key' => 'field_5db2d7ac95f89',
+			'label' => 'スポンサーロゴ',
+			'name' => 'mu_award_logo',
+			'type' => 'image',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'id',
+			'preview_size' => 'medium',
+			'library' => 'all',
+			'min_width' => '',
+			'min_height' => '',
+			'min_size' => '',
+			'max_width' => '',
+			'max_height' => '',
+			'max_size' => '',
+			'mime_types' => '',
+		),
+		array(
+			'key' => 'field_5db2d7ac95f90',
+			'label' => 'スポンサーリンク先',
+			'name' => 'mu_award_logo_link',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_5db2d7ea95f8a',
+			'label' => '自由入力欄',
+			'name' => 'mu_award_text_ja',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'page',
+				'operator' => '==',
+				'value' => $award_pageid,
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'seamless',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => array(
+		0 => 'the_content',
+	),
+	'active' => true,
+	'description' => '',
+));
+
+// 固定ページ スピーカー sponsors
+$pagecheck = get_page_by_path( 'sponsors' );
+if ( ! empty( $pagecheck ) ) {
+	$supporters_pageid = $pagecheck->ID;
+} else {
+	$supporters_pageid = 1;
+}
 acf_add_local_field_group(array(
 	'key' => 'group_5d21f4bb89d83',
 	'title' => 'スポンサー募集情報',
@@ -610,7 +638,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d21f502353a1',
-			'label' => 'リード文(日本語)',
+			'label' => 'リード文',
 			'name' => 'mashing-up_sponsored--lead_ja',
 			'type' => 'textarea',
 			'instructions' => '',
@@ -628,47 +656,9 @@ acf_add_local_field_group(array(
 			'new_lines' => 'br',
 		),
 		array(
-			'key' => 'field_5d21f517353a2',
-			'label' => 'リード文(英語)',
-			'name' => 'mashing-up_sponsored--lead_en',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 2,
-			'new_lines' => 'br',
-		),
-		array(
 			'key' => 'field_5d21f526353a3',
-			'label' => '募集文言（日本語）',
+			'label' => '募集文言',
 			'name' => 'mashing-up_sponsored--content_ja',
-			'type' => 'wysiwyg',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'tabs' => 'all',
-			'toolbar' => 'full',
-			'media_upload' => 1,
-			'delay' => 0,
-		),
-		array(
-			'key' => 'field_5d21f526353a4',
-			'label' => '募集文言（英語)',
-			'name' => 'mashing-up_sponsored--content_en',
 			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
@@ -705,9 +695,9 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d21f53a353a6',
-			'label' => '送信先メールアドレス',
-			'name' => 'mashing-up_sponsored--email',
-			'type' => 'email',
+			'label' => 'リンク先URL',
+			'name' => 'mashing-up_sponsored--anchor',
+			'type' => 'url',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
@@ -718,15 +708,14 @@ acf_add_local_field_group(array(
 			),
 			'default_value' => '',
 			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',		),
+		),
 	),
 	'location' => array(
 		array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '17',
+				'value' => $supporters_pageid,
 			),
 		),
 	),
@@ -791,13 +780,20 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ タイムテーブル timetable
+$pagecheck = get_page_by_path( 'timetable' );
+if ( ! empty( $pagecheck ) ) {
+	$timetable_pageid = $pagecheck->ID;
+} else {
+	$timetable_pageid = 1;
+}
 acf_add_local_field_group(array(
 	'key' => 'group_5d25e4babc0fa',
 	'title' => 'timetable',
 	'fields' => array(
 		array(
 			'key' => 'field_5d2715a7644e4',
-			'label' => 'リード文（日本語）',
+			'label' => 'リード文',
 			'name' => 'mu_timetable_lead_ja',
 			'type' => 'textarea',
 			'instructions' => '',
@@ -815,27 +811,8 @@ acf_add_local_field_group(array(
 			'new_lines' => 'br',
 		),
 		array(
-			'key' => 'field_5d2715c0644e5',
-			'label' => 'リード文（英語）',
-			'name' => 'mu_timetable_lead_en',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 4,
-			'new_lines' => 'br',
-		),
-		array(
 			'key' => 'field_5d2715c0644e6',
-			'label' => '注意書き（日本語）',
+			'label' => '注意書き',
 			'name' => 'mu_timetable_note_ja',
 			'type' => 'textarea',
 			'instructions' => '',
@@ -852,137 +829,13 @@ acf_add_local_field_group(array(
 			'rows' => 4,
 			'new_lines' => 'br',
 		),
-		array(
-			'key' => 'field_5d2715c0644e7',
-			'label' => '注意書き（英語）',
-			'name' => 'mu_timetable_note_en',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 4,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d297293af123',
-			'label' => 'フロアマップ',
-			'name' => 'mu_timetable_floormaps',
-			'type' => 'repeater',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'collapsed' => '',
-			'min' => 0,
-			'max' => 0,
-			'layout' => 'table',
-			'button_label' => '',
-			'sub_fields' => array(
-				array(
-					'key' => 'field_5d2972e1af124',
-					'label' => 'フロアマップ画像',
-					'name' => 'mu_timetable_floormap',
-					'type' => 'image',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'return_format' => 'url',
-					'preview_size' => 'medium',
-					'library' => 'uploadedTo',
-					'min_width' => '',
-					'min_height' => '',
-					'min_size' => '',
-					'max_width' => '',
-					'max_height' => '',
-					'max_size' => '',
-					'mime_types' => '',
-				),
-			),
-		),
-		array(
-			'key' => 'field_5d2972b4af125',
-			'label' => 'フロアマップ注意書き（日本語）',
-			'name' => 'mu_floormap_note_ja',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 3,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d2972b4af126',
-			'label' => 'フロアマップ注意書き（英語）',
-			'name' => 'mu_floormap_note_en',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 3,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d297bd8b0927',
-			'label' => '表示するスポンサー種別',
-			'name' => 'mu_timetable_sponsor_types',
-			'type' => 'taxonomy',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'taxonomy' => 'sponsor_type',
-			'field_type' => 'checkbox',
-			'add_term' => 1,
-			'save_terms' => 0,
-			'load_terms' => 0,
-			'return_format' => 'id',
-			'multiple' => 0,
-			'allow_null' => 0,
-		),
 	),
 	'location' => array(
 		array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '13',
+				'value' => $timetable_pageid,
 			),
 		),
 	),
@@ -1060,27 +913,8 @@ acf_add_local_field_group(array(
 	'fields' => array(
 		array(
 			'key' => 'field_5d25e84285883',
-			'label' => 'リード文（日本語）',
+			'label' => 'リード文',
 			'name' => 'mu_session_lead_ja',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 6,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d26b84288493',
-			'label' => 'リード文（英語）',
-			'name' => 'mu_session_lead_en',
 			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
@@ -1118,52 +952,21 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+// 固定ページ チケット tickets
+$pagecheck = get_page_by_path( 'tickets' );
+if ( ! empty( $pagecheck ) ) {
+	$tickets_pageid = $pagecheck->ID;
+} else {
+	$tickets_pageid = 1;
+}
 acf_add_local_field_group(array(
 	'key' => 'group_5d26fe802366d',
 	'title' => 'ticket',
 	'fields' => array(
 		array(
-			'key' => 'field_5d26fe8db4685',
-			'label' => 'サブタイトル',
-			'name' => 'mu_tickets_subtitle',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
 			'key' => 'field_5d26feacb4686',
-			'label' => '自由入力欄（日本語）',
+			'label' => '自由入力欄',
 			'name' => 'mu_tickets_text_ja',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 4,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d26fedeb4687',
-			'label' => '自由入力欄（英語）',
-			'name' => 'mu_tickets_text_en',
 			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
@@ -1200,27 +1003,8 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d27018a8b475',
-			'label' => '補足事項（日本語）',
+			'label' => '補足事項',
 			'name' => 'mu_tickets_notes_ja',
-			'type' => 'wysiwyg',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'tabs' => 'all',
-			'toolbar' => 'full',
-			'media_upload' => 1,
-			'delay' => 0,
-		),
-		array(
-			'key' => 'field_5d2705763e687',
-			'label' => '補足事項（英語）',
-			'name' => 'mu_tickets_notes_en',
 			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
@@ -1242,7 +1026,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page',
 				'operator' => '==',
-				'value' => '19',
+				'value' => $tickets_pageid,
 			),
 		),
 	),
@@ -1283,7 +1067,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5d22928d60a79',
-			'label' => 'サブタイトル（日本語）',
+			'label' => 'サブタイトル',
 			'name' => 'subt-title-ja',
 			'type' => 'text',
 			'instructions' => '',
@@ -1301,47 +1085,9 @@ acf_add_local_field_group(array(
 			'maxlength' => '',
 		),
 		array(
-			'key' => 'field_5d2292cd60a7a',
-			'label' => 'サブタイトル（英語）',
-			'name' => 'subt-title-en',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
 			'key' => 'field_5d2292df60a7b',
-			'label' => 'リード文（日本語）',
+			'label' => 'リード文',
 			'name' => 'lead-ja',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 3,
-			'new_lines' => 'br',
-		),
-		array(
-			'key' => 'field_5d2292f560a7c',
-			'label' => 'リード文（英語）',
-			'name' => 'lead-en',
 			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
@@ -1383,7 +1129,7 @@ acf_add_local_field_group(array(
 	'fields' => array(
 		array(
 			'key' => 'field_5d2873aa13fd3',
-			'label' => 'アドバイザリーボードメンバー リード文（日本語）',
+			'label' => 'アドバイザリーボードメンバー リード文',
 			'name' => 'mashing-up_about--advisory-ja',
 			'type' => 'textarea',
 			'instructions' => '',
@@ -1401,47 +1147,9 @@ acf_add_local_field_group(array(
 			'new_lines' => '',
 		),
 		array(
-			'key' => 'field_5d2873eb13fd4',
-			'label' => 'アドバイザリーボードメンバー リード文（英語）',
-			'name' => 'mashing-up_about--advisory-en',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 3,
-			'new_lines' => '',
-		),
-		array(
 			'key' => 'field_5d2873fb0e1d3',
-			'label' => 'コミッティメンバー リード文（日本語）',
+			'label' => 'コミッティメンバー リード文',
 			'name' => 'mashing-up_about--committee-ja',
-			'type' => 'textarea',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => 3,
-			'new_lines' => '',
-		),
-		array(
-			'key' => 'field_5d2873fd0e1d4',
-			'label' => 'コミッティメンバー リード文（英語）',
-			'name' => 'mashing-up_about--committee-en',
 			'type' => 'textarea',
 			'instructions' => '',
 			'required' => 0,
@@ -1535,6 +1243,74 @@ acf_add_local_field_group(array(
 				'param' => 'taxonomy',
 				'operator' => '==',
 				'value' => 'sponsor_type',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+));
+
+// スピーカー種別
+acf_add_local_field_group(array(
+	'key' => 'group_5dd24349de063',
+	'title' => '賞',
+	'fields' => array(
+		array(
+			'key' => 'field_5dd248d26c92f',
+			'label' => 'ラベル',
+			'name' => 'award_label',
+			'type' => 'text',
+			'instructions' => 'スピーカーがゲームチェンジャーの子カテゴリーに属する場合のみ出力されます',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+		array(
+			'key' => 'field_5dd249006c930',
+			'label' => '画像',
+			'name' => 'award_image',
+			'type' => 'image',
+			'instructions' => 'スピーカーがゲームチェンジャーの子カテゴリーに属する場合のみ出力されます',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'id',
+			'preview_size' => 'medium',
+			'library' => 'all',
+			'min_width' => '',
+			'min_height' => '',
+			'min_size' => '',
+			'max_width' => '',
+			'max_height' => '',
+			'max_size' => '',
+			'mime_types' => '',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'taxonomy',
+				'operator' => '==',
+				'value' => 'speaker_type',
 			),
 		),
 	),
